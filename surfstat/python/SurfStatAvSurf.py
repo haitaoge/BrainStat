@@ -58,10 +58,3 @@ def py_SurfStatAvSurf(filenames, fun = np.add):
     surf['coord'] = surf['coord'] / m
     return surf
             
-# filenames are given as nested lists
-filenames = [['/data/p_02323/hippocampus/data/shellsMni/HCP_996782_R_SUB.obj',
-             '/data/p_02323/hippocampus/data/shellsMni/HCP_996782_L_SUB.obj'],
-             ['/data/p_02323/hippocampus/data/shellsMni/HCP_994273_R_SUB.obj',
-              '/data/p_02323/hippocampus/data/shellsMni/HCP_994273_L_SUB.obj']]
-
-py_SurfStatAvSurf(filenames, fun = np.fmax)
